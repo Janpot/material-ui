@@ -12,7 +12,7 @@ jobs:
   # Tests dev-only scripts across all supported dev environments
   test-dev:
     # l10nbot does not affect dev scripts.
-    if: ${{ if: github.repository_owner == 'mui' && github.actor != 'l10nbot' }}
+    if: ${{ github.repository_owner == 'mui' && github.actor != 'l10nbot' }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
