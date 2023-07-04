@@ -38,22 +38,22 @@ const packages = [
   {
     productId: 'material-ui',
     paths: [
-      path.join(__dirname, '../../packages/mui-base/src'),
-      path.join(__dirname, '../../packages/mui-lab/src'),
-      path.join(__dirname, '../../packages/mui-material/src'),
+      path.join(require.resolve('@mui/base'), './src'),
+      path.join(require.resolve('@mui/lab'), './src'),
+      path.join(require.resolve('@mui/material'), './src'),
     ],
   },
   {
     productId: 'base-ui',
-    paths: [path.join(__dirname, '../../packages/mui-base/src')],
+    paths: [path.join(require.resolve('@mui/base'), './src')],
   },
   {
     productId: 'joy-ui',
-    paths: [path.join(__dirname, '../../packages/mui-joy/src')],
+    paths: [path.join(require.resolve('@mui/joy'), './src')],
   },
 ];
 
-/* packages.forEach((pkg) => {
+packages.forEach((pkg) => {
   pkg.paths.forEach((pkgPath) => {
     const match = pkgPath.match(/packages(?:\\|\/)([^/\\]+)(?:\\|\/)src/);
     const packageName = match ? match[1] : null;
@@ -71,7 +71,7 @@ const packages = [
       }
     });
   });
-}); */
+});
 
 /**
  * @type {import('webpack').loader.Loader}
