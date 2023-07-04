@@ -246,5 +246,6 @@
     "packages/*",
     "docs",
     "test"
-  ]
+  ],
+  "packageManager": "yarn@3.6.1"
 }
