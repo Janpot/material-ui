@@ -4,7 +4,6 @@
 .idea
 # IntelliJ IDEA module file
 *.iml
-.yarn
 .vscode/*
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -36,3 +35,10 @@ node_modules
 package-lock.json
 size-snapshot.json
 docs/public/static/blog/feed/*
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
