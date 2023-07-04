@@ -2,7 +2,6 @@
   "name": "@mui/codemod",
   "version": "5.13.3",
   "bin": "./codemod.js",
-  "private": false,
   "author": "MUI Team",
   "description": "Codemod scripts for MUI.",
   "keywords": [

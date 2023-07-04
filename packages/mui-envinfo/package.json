@@ -1,6 +1,5 @@
 {
   "name": "@mui/envinfo",
-  "private": false,
   "publishConfig": {
     "access": "public"
   },

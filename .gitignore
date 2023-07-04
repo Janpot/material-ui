@@ -4,6 +4,7 @@
 .idea
 # IntelliJ IDEA module file
 *.iml
+.yarn
 .vscode/*
 !.vscode/launch.json
 !.vscode/extensions.json

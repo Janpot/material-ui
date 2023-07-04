@@ -1,7 +1,6 @@
 {
   "name": "@mui/material",
   "version": "5.13.7",
-  "private": false,
   "author": "MUI Team",
   "description": "React components that implement Google's Material Design.",
   "main": "./src/index.ts",
@@ -49,13 +48,13 @@
     "react-dom": "^17.0.0 || ^18.0.0"
   },
   "peerDependenciesMeta": {
-    "@types/react": {
-      "optional": true
-    },
     "@emotion/react": {
       "optional": true
     },
     "@emotion/styled": {
+      "optional": true
+    },
+    "@types/react": {
       "optional": true
     }
   },
