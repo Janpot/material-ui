@@ -2741,7 +2741,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.22.5
     "@mui-internal/docs-utilities": ^1.0.0
-    "@mui/markdown": ^5.0.0
+    "@mui/markdown": "workspace:*"
     "@types/mocha": ^10.0.1
     "@types/node": ^18.16.19
     ast-types: ^0.14.2
@@ -2919,7 +2919,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mui/markdown@^5.0.0, @mui/markdown@workspace:*, @mui/markdown@workspace:packages/markdown":
+"@mui/markdown@workspace:*, @mui/markdown@workspace:packages/markdown":
   version: 0.0.0-use.local
   resolution: "@mui/markdown@workspace:packages/markdown"
   dependencies:
