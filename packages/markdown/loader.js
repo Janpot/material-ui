@@ -53,7 +53,7 @@ const packages = [
   },
 ];
 
-packages.forEach((pkg) => {
+/* packages.forEach((pkg) => {
   pkg.paths.forEach((pkgPath) => {
     const match = pkgPath.match(/packages(?:\\|\/)([^/\\]+)(?:\\|\/)src/);
     const packageName = match ? match[1] : null;
@@ -71,7 +71,7 @@ packages.forEach((pkg) => {
       }
     });
   });
-});
+}); */
 
 /**
  * @type {import('webpack').loader.Loader}
