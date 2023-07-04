@@ -253,7 +253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.10.4, @babel/code-frame@npm:^7.22.5":
+"@babel/code-frame@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/code-frame@npm:7.22.5"
   dependencies:
@@ -269,7 +269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.12.3, @babel/core@npm:^7.13.16, @babel/core@npm:^7.22.5, @babel/core@npm:^7.7.5":
+"@babel/core@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/core@npm:7.22.5"
   dependencies:
@@ -622,7 +622,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-class-properties@npm:^7.13.0, @babel/plugin-proposal-class-properties@npm:^7.18.6":
+"@babel/plugin-proposal-class-properties@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/plugin-proposal-class-properties@npm:7.18.6"
   dependencies:
@@ -634,7 +634,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.13.8":
+"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/plugin-proposal-nullish-coalescing-operator@npm:7.18.6"
   dependencies:
@@ -661,7 +661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-optional-chaining@npm:^7.13.12":
+"@babel/plugin-proposal-optional-chaining@npm:^7.21.0":
   version: 7.21.0
   resolution: "@babel/plugin-proposal-optional-chaining@npm:7.21.0"
   dependencies:
@@ -1069,14 +1069,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-destructuring@npm:^7.22.5":
-  version: 7.22.5
-  resolution: "@babel/plugin-transform-destructuring@npm:7.22.5"
+"@babel/plugin-transform-destructuring@npm:@minh.nguyen/plugin-transform-destructuring@^7.5.2":
+  version: 7.5.2
+  resolution: "@minh.nguyen/plugin-transform-destructuring@npm:7.5.2"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.22.5
+    "@babel/helper-plugin-utils": ^7.0.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 76f6ea2aee1fcfa1c3791eb7a5b89703c6472650b993e8666fff0f1d6e9d737a84134edf89f63c92297f3e75064c1263219463b02dd9bc7434b6e5b9935e3f20
+  checksum: b0b9a74fc6a61945c1a9495f5bf69155bd4f00b76eada251d6d6b792c482ac4153d497e19a045ba489eb70bc6fcbd8f7a87dff77411d779ce1e2dd25789edb99
   languageName: node
   linkType: hard
 
@@ -1780,7 +1780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.13.0, @babel/preset-typescript@npm:^7.22.5":
+"@babel/preset-typescript@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/preset-typescript@npm:7.22.5"
   dependencies:
@@ -1827,7 +1827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.0.0, @babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/runtime@npm:7.22.5"
   dependencies:
@@ -2066,7 +2066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@definitelytyped/header-parser@latest":
+"@definitelytyped/header-parser@npm:^0.0.163":
   version: 0.0.163
   resolution: "@definitelytyped/header-parser@npm:0.0.163"
   dependencies:
@@ -2077,14 +2077,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@definitelytyped/typescript-versions@latest, @definitelytyped/typescript-versions@npm:^0.0.163":
+"@definitelytyped/typescript-versions@npm:^0.0.163":
   version: 0.0.163
   resolution: "@definitelytyped/typescript-versions@npm:0.0.163"
   checksum: 3f4729c8b9f61ca6d6cc9d59663227ebdd2ea1cd2eba33e7ca4415d9b6eb3bea4ebd542060a9406abe87d33d49682d44514ea642ef0096ca9b16c344b35afd3d
   languageName: node
   linkType: hard
 
-"@definitelytyped/utils@latest":
+"@definitelytyped/utils@npm:^0.0.163":
   version: 0.0.163
   resolution: "@definitelytyped/utils@npm:0.0.163"
   dependencies:
@@ -2919,7 +2919,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mui/markdown@^5.0.0, @mui/markdown@workspace:packages/markdown":
+"@mui/markdown@^5.0.0, @mui/markdown@workspace:*, @mui/markdown@workspace:packages/markdown":
   version: 0.0.0-use.local
   resolution: "@mui/markdown@workspace:packages/markdown"
   dependencies:
@@ -5439,7 +5439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^16, @types/react@npm:^18.2.14":
+"@types/react@npm:^18.2.14":
   version: 18.2.14
   resolution: "@types/react@npm:18.2.14"
   dependencies:
@@ -9621,7 +9621,7 @@ __metadata:
     "@mui/icons-material": ^5.13.7
     "@mui/joy": 5.0.0-alpha.86
     "@mui/lab": 5.0.0-alpha.135
-    "@mui/markdown": ^5.0.0
+    "@mui/markdown": "workspace:*"
     "@mui/material": ^5.13.7
     "@mui/material-next": 6.0.0-alpha.91
     "@mui/styled-engine": ^5.13.2

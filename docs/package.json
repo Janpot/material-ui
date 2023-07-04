@@ -36,7 +36,7 @@
     "@mui/icons-material": "^5.13.7",
     "@mui/joy": "5.0.0-alpha.86",
     "@mui/lab": "5.0.0-alpha.135",
-    "@mui/markdown": "^5.0.0",
+    "@mui/markdown": "workspace:*",
     "@mui/material": "^5.13.7",
     "@mui/material-next": "6.0.0-alpha.91",
     "@mui/styled-engine": "^5.13.2",
