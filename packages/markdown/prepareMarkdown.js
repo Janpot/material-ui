@@ -145,24 +145,24 @@ ${headers.hooks
         options,
       });
 
-      const rendered = contents.map((content) => {
-        if (/^"(demo|component)": "(.*)"/.test(content)) {
-          try {
-            return JSON.parse(`{${content}}`);
-          } catch (err) {
-            console.error('JSON.parse fails with: ', `{${content}}`);
-            console.error(err);
-            return null;
-          }
-        }
-
+      const rendered = contents.flatMap((content) => {
         const codeblock = getCodeblock(content);
 
         if (codeblock) {
           return codeblock;
         }
 
-        return render(content);
+        const renderedContent = render(content);
+
+        return renderedContent
+          .split(/<mui-component>(.*?)<\/mui-component>/g)
+          .map((componentJson, i) => {
+            if (i % 2 === 1) {
+              return JSON.parse(componentJson);
+            }
+            return componentJson;
+          })
+          .filter(Boolean);
       });
 
       // fragment link symbol

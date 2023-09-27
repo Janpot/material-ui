@@ -186,8 +186,7 @@ function getHeaders(markdown) {
 function getContents(markdown) {
   const rep = markdown
     .replace(headerRegExp, '') // Remove header information
-    .split(/^{{("(?:demo|component)":.*)}}$/gm) // Split markdown into an array, separating demos
-    .flatMap((text) => text.split(/^(<codeblock.*?<\/codeblock>)$/gmsu))
+    .split(/^(<codeblock.*?<\/codeblock>)$/gmsu)
     .filter((content) => !emptyRegExp.test(content)); // Remove empty lines
   return rep;
 }
@@ -457,6 +456,27 @@ function createRender(context) {
             }
             <div class="MuiCallout-content">
             ${this.parser.parse(token.tokens)}\n</div></aside>`;
+          },
+        },
+        {
+          name: 'component',
+          level: 'block',
+          tokenizer(src) {
+            const rule = /^{({"(?:demo|component)":.*?})}/;
+            const match = rule.exec(src);
+            if (match) {
+              const token = {
+                type: 'component',
+                raw: match[0],
+                data: JSON.parse(match[1]),
+              };
+              return token;
+            }
+            return undefined;
+          },
+
+          renderer(token) {
+            return `<mui-component>${JSON.stringify(token.data)}</mui-component>`;
           },
         },
       ],
