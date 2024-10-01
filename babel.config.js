@@ -24,7 +24,7 @@ const productionPlugins = [
 
 /** @type {babel.ConfigFunction} */
 module.exports = function getBabelConfig(api) {
-  const useESModules = api.env(['regressions', 'modern', 'stable']);
+  const useESModules = api.env(['regressions', 'modern', 'stable', 'rollup-stable']);
 
   const defaultAlias = {
     '@mui/material': resolveAliasPath('./packages/mui-material/src'),
@@ -114,7 +114,7 @@ module.exports = function getBabelConfig(api) {
         ],
       },
     ],
-    ...(useESModules
+    ...(useESModules && !api.env('rollup-stable')
       ? [
           [
             '@mui/internal-babel-plugin-resolve-imports',
