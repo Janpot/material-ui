@@ -205,6 +205,11 @@
   "engines": {
     "pnpm": "9.15.2"
   },
+  "pnpm": {
+    "overrides": {
+      "react-spring>@react-spring/zdog": "-"
+    }
+  },
   "resolutions": {
     "@babel/core": "^7.26.0",
     "@babel/plugin-transform-runtime": "^7.25.9",

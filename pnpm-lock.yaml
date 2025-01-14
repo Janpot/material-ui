@@ -21,6 +21,7 @@ overrides:
   '@pigment-css/unplugin': 0.0.29
   '@pigment-css/nextjs-plugin': 0.0.29
   '@pigment-css/vite-plugin': 0.0.29
+  react-spring>@react-spring/zdog: '-'
 
 importers:
 
@@ -796,7 +797,7 @@ importers:
         version: 0.14.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-spring:
         specifier: ^9.7.5
-        version: 9.7.5(@react-three/fiber@8.16.0(react-dom@19.0.0(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0))(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react-konva@18.2.10(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react-zdog@1.2.2)(react@19.0.0)(three@0.162.0)(zdog@1.1.3)
+        version: 9.7.5(@react-three/fiber@8.16.0(react-dom@19.0.0(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0))(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react-konva@18.2.10(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0)
       react-swipeable-views:
         specifier: ^0.14.0
         version: 0.14.0(react@19.0.0)
@@ -5000,14 +5001,6 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-
-  '@react-spring/zdog@9.7.5':
-    resolution: {integrity: sha512-VV7vmb52wGHgDA1ry6hv+QgxTs78fqjKEQnj+M8hiBg+dwOsTtqqM24ADtc4cMAhPW+eZhVps8ZNKtjt8ouHFA==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-zdog: '>=1.0'
-      zdog: '>=1.0'
 
   '@react-three/fiber@8.16.0':
     resolution: {integrity: sha512-mLyeie8UvMmQe8qs5RD/4KGxlekHuG8YXMKSilMbQ8hTIhBs68h+nEa/9xLkDus9ZnXr1GxRzd6WYNNZpU6EkA==}
@@ -11127,11 +11120,6 @@ packages:
     engines: {node: '>=8.10.0'}
     hasBin: true
 
-  react-dom@18.3.1:
-    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
-    peerDependencies:
-      react: ^18.3.1
-
   react-dom@19.0.0:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
     peerDependencies:
@@ -11327,13 +11315,6 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  react-zdog@1.2.2:
-    resolution: {integrity: sha512-Ix7ALha91aOEwiHuxumCeYbARS5XNpc/w0v145oGkM6poF/CvhKJwzLhM5sEZbtrghMA+psAhOJkCTzJoseicA==}
-
-  react@18.3.1:
-    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
-    engines: {node: '>=0.10.0'}
-
   react@19.0.0:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
@@ -11508,9 +11489,6 @@ packages:
 
   reselect@5.1.1:
     resolution: {integrity: sha512-K/BG6eIky/SBpzfHZv/dd+9JBFiS4SWV7FIujVyJRux6e45+73RaUHXLmIR1f7WOMaQ0U1km6qwklRQxpJJY0w==}
-
-  resize-observer-polyfill@1.5.1:
-    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
 
   resolve-cwd@3.0.0:
     resolution: {integrity: sha512-OrZaX2Mb+rJCpH/6CpSqt9xFVpN++x01XnN2ie9g6P5/3xelLAkXWVADpdz1IHD/KFfEXyE6V0U01OQ3UO2rEg==}
@@ -13192,9 +13170,6 @@ packages:
   yoctocolors@2.0.2:
     resolution: {integrity: sha512-Ct97huExsu7cWeEjmrXlofevF8CvzUglJ4iGUet5B8xn1oumtAZBpHU4GzYuoE6PVqcZ5hghtBrSlhwHuR1Jmw==}
     engines: {node: '>=18'}
-
-  zdog@1.1.3:
-    resolution: {integrity: sha512-raRj6r0gPzopFm5XWBJZr/NuV4EEnT4iE+U3dp5FV5pCb588Gmm3zLIp/j9yqqcMiHH8VNQlerLTgOqL7krh6w==}
 
   zip-stream@2.1.3:
     resolution: {integrity: sha512-EkXc2JGcKhO5N5aZ7TmuNo45budRaFGHOmz24wtJR7znbNqDPmdZtUauKX6et8KAVseAMBOyWJqEpXcHTBsh7Q==}
@@ -16418,17 +16393,6 @@ snapshots:
       '@react-spring/types': 9.7.5
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
-
-  '@react-spring/zdog@9.7.5(react-dom@19.0.0(react@19.0.0))(react-zdog@1.2.2)(react@19.0.0)(zdog@1.1.3)':
-    dependencies:
-      '@react-spring/animated': 9.7.5(react@19.0.0)
-      '@react-spring/core': 9.7.5(react@19.0.0)
-      '@react-spring/shared': 9.7.5(react@19.0.0)
-      '@react-spring/types': 9.7.5
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      react-zdog: 1.2.2
-      zdog: 1.1.3
 
   '@react-three/fiber@8.16.0(react-dom@19.0.0(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0)':
     dependencies:
@@ -23944,12 +23908,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  react-dom@18.3.1(react@18.3.1):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.3.1
-      scheduler: 0.23.2
-
   react-dom@19.0.0(react@19.0.0):
     dependencies:
       react: 19.0.0
@@ -24141,14 +24099,13 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  react-spring@9.7.5(@react-three/fiber@8.16.0(react-dom@19.0.0(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0))(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react-konva@18.2.10(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react-zdog@1.2.2)(react@19.0.0)(three@0.162.0)(zdog@1.1.3):
+  react-spring@9.7.5(@react-three/fiber@8.16.0(react-dom@19.0.0(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0))(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react-konva@18.2.10(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0):
     dependencies:
       '@react-spring/core': 9.7.5(react@19.0.0)
       '@react-spring/konva': 9.7.5(konva@9.3.6)(react-konva@18.2.10(konva@9.3.6)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       '@react-spring/native': 9.7.5(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)
       '@react-spring/three': 9.7.5(@react-three/fiber@8.16.0(react-dom@19.0.0(react@19.0.0))(react-native@0.75.4(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.6)(encoding@0.1.13)(react@19.0.0)(typescript@5.7.2))(react@19.0.0)(three@0.162.0))(react@19.0.0)(three@0.162.0)
       '@react-spring/web': 9.7.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-spring/zdog': 9.7.5(react-dom@19.0.0(react@19.0.0))(react-zdog@1.2.2)(react@19.0.0)(zdog@1.1.3)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
@@ -24156,9 +24113,7 @@ snapshots:
       - konva
       - react-konva
       - react-native
-      - react-zdog
       - three
-      - zdog
 
   react-swipeable-views-core@0.14.0:
     dependencies:
@@ -24211,16 +24166,6 @@ snapshots:
       memoize-one: 5.2.1
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
-
-  react-zdog@1.2.2:
-    dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      resize-observer-polyfill: 1.5.1
-
-  react@18.3.1:
-    dependencies:
-      loose-envify: 1.4.0
 
   react@19.0.0: {}
 
@@ -24448,8 +24393,6 @@ snapshots:
   reselect@4.1.8: {}
 
   reselect@5.1.1: {}
-
-  resize-observer-polyfill@1.5.1: {}
 
   resolve-cwd@3.0.0:
     dependencies:
@@ -26376,8 +26319,6 @@ snapshots:
   yoctocolors-cjs@2.1.2: {}
 
   yoctocolors@2.0.2: {}
-
-  zdog@1.1.3: {}
 
   zip-stream@2.1.3:
     dependencies:
