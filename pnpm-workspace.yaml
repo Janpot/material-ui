@@ -1,9 +1,11 @@
 packages:
-  - 'benchmark'
-  - 'packages/*'
-  - 'packages/mui-envinfo/test'
-  - 'packages-internal/*'
-  - 'docs'
-  - 'test'
-  - 'apps/*'
-  - 'scripts/sizeSnapshot'
+  - benchmark
+  - packages/*
+  - packages/mui-envinfo/test
+  - packages-internal/*
+  - docs
+  - test
+  - apps/*
+  - scripts/sizeSnapshot
+ignoredBuiltDependencies:
+  - '@mui/x-telemetry'
