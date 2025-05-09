@@ -29,6 +29,14 @@ pluginTester({
 
   tests: [
     {
+      title: 'ignore extensions',
+      pluginOptions: {
+        outExtension: '.js',
+      },
+      fixture: path.join(fixturePath, 'ignore-extensions', 'input.js'),
+      output: readOutputFixtureSync('ignore-extensions', 'output.js'),
+    },
+    {
       title: 'basic js imports',
       pluginOptions: {
         outExtension: '.js',
