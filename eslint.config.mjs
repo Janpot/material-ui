@@ -299,4 +299,10 @@ export default defineConfig(
       'react/no-unknown-property': ['error', { ignore: ['sx'] }],
     },
   },
+
+  {
+    rules: {
+      '@typescript-eslint/no-namespace': 'error',
+    },
+  },
 );
